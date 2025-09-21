@@ -1,94 +1,229 @@
 const questions = [
   {
-    question: "JavaScript is an _________ language?",
-    answers: [
-      { text: "Object-Oriented", correct:true },
-      { text: "Object-based", correct: false },
-      { text: "Procedural", correct: false },
-      { text: "None of the above", correct: false },
-    ],
+    "question": "In a star topology, if the central hub fails, what happens to the network?",
+    "answers": [
+      { "text": "Only one node disconnects", "correct": false },
+      { "text": "Entire network goes down", "correct": true },
+      { "text": "Network still works partially", "correct": false },
+      { "text": "Nothing happens", "correct": false }
+    ]
   },
   {
-    question: "which of the following keywords is used to define a variable in javascript?",
-    answers: [
-      { text: "var", correct: false },
-      { text: "let", correct: false },
-      { text: "Both A and B", correct: true },
-      { text: "Giraffe", correct: false },
-    ],
+    "question": "Which OSI layer is responsible for reliable transmission using error detection and correction?",
+    "answers": [
+      { "text": "Data Link Layer", "correct": false },
+      { "text": "Transport Layer", "correct": true },
+      { "text": "Network Layer", "correct": false },
+      { "text": "Session Layer", "correct": false }
+    ]
   },
   {
-    question: "Which of the following methods can be used to display data in some from using javascript",
-    answers: [
-      { text: "document.write()", correct: false },
-      { text: "console.log()", correct: false },
-      { text: "window.alert", correct: false },
-      { text: "All of the above", correct: true },
-    ],
+    "question": "In bus topology, what happens if the main cable breaks?",
+    "answers": [
+      { "text": "Only one computer disconnects", "correct": false },
+      { "text": "Entire network fails", "correct": true },
+      { "text": "Other nodes continue normally", "correct": false },
+      { "text": "Signal speed increases", "correct": false }
+    ]
   },
   {
-    question: "What keyword is used to check wheather a given property is valid or not?",
-    answers: [
-      { text: "in", correct: true },
-      { text: "is in", correct: false },
-      { text: "exists", correct: false },
-      { text: "lies", correct: false },
-    ],
+    "question": "At which OSI layer does IP addressing work?",
+    "answers": [
+      { "text": "Data Link Layer", "correct": false },
+      { "text": "Network Layer", "correct": true },
+      { "text": "Transport Layer", "correct": false },
+      { "text": "Application Layer", "correct": false }
+    ]
   },
   {
-    question: "How can a datatype be declared to be a constant type?",
-    answers: [
-      { text: "const", correct: true },
-      { text: "var", correct: false },
-      { text: "let", correct: false },
-      { text: "constant", correct: false },
-    ],
+    "question": "Which topology is most fault tolerant?",
+    "answers": [
+      { "text": "Bus", "correct": false },
+      { "text": "Ring", "correct": false },
+      { "text": "Mesh", "correct": true },
+      { "text": "Star", "correct": false }
+    ]
   },
   {
-    question: "When an operator' s value is NULL, the typeof returned by the unary operator is:?",
-    answers: [
-      { text: "Boolean", correct: false },
-      { text: "Undefined", correct: false },
-      { text: "Object", correct: true },
-      { text: "Integer", correct: false },
-    ],
+    "question": "If a packet is lost during transmission, which OSI layer ensures retransmission?",
+    "answers": [
+      { "text": "Physical Layer", "correct": false },
+      { "text": "Transport Layer", "correct": true },
+      { "text": "Session Layer", "correct": false },
+      { "text": "Presentation Layer", "correct": false }
+    ]
   },
   {
-    question: `What is the output of the following code snippet? <br/> <p style='color:red';> print(NaN===NaN)</p>`,
-    answers: [
-      { text: "true", correct: false },
-      { text: "false", correct: true },
-      { text: "undefined", correct: false },
-      { text: "Error", correct: false },
-    ],
+    "question": "In a ring topology, if one node goes down, what is the effect?",
+    "answers": [
+      { "text": "Network stops working", "correct": true },
+      { "text": "Only that node disconnects", "correct": false },
+      { "text": "Ring automatically repairs", "correct": false },
+      { "text": "Data continues in opposite direction", "correct": false }
+    ]
   },
   {
-    question: `What will be the output of the following code snippet? <br/> <p style='color:red';> print(typeof(NaN))</p>`,
-    answers: [
-      { text: "Object", correct: false },
-      { text: "String", correct: false },
-      { text: "Number", correct: true },
-      { text: "None of the above", correct: false },
-    ],
+    "question": "Which OSI layer handles data encryption and compression?",
+    "answers": [
+      { "text": "Session Layer", "correct": false },
+      { "text": "Presentation Layer", "correct": true },
+      { "text": "Transport Layer", "correct": false },
+      { "text": "Application Layer", "correct": false }
+    ]
   },
   {
-    question: "Which of the following are closures in javascript?",
-    answers: [
-      { text: "Variable", correct: false },
-      { text: "Functions", correct: false },
-      { text: "Objects", correct: false },
-      { text: "None of the above", correct: true },
-    ],
+    "question": "In star topology, which component acts as a central point?",
+    "answers": [
+      { "text": "Switch/Hub", "correct": true },
+      { "text": "Router", "correct": false },
+      { "text": "Server", "correct": false },
+      { "text": "Modem", "correct": false }
+    ]
   },
   {
-    question: "What keyword is used to declare an asynchronous function in javascript?",
-    answers: [
-      { text: "async", correct: false },
-      { text: "await", correct: false },
-      { text: "setTimeout", correct: true },
-      { text: "None of the above", correct: false },
-    ],
+    "question": "Which OSI layer ensures that packets reach the correct destination device?",
+    "answers": [
+      { "text": "Data Link Layer", "correct": false },
+      { "text": "Network Layer", "correct": true },
+      { "text": "Transport Layer", "correct": false },
+      { "text": "Physical Layer", "correct": false }
+    ]
   },
+  {
+    "question": "Which topology is easiest to install and least expensive?",
+    "answers": [
+      { "text": "Bus", "correct": true },
+      { "text": "Ring", "correct": false },
+      { "text": "Star", "correct": false },
+      { "text": "Mesh", "correct": false }
+    ]
+  },
+  {
+    "question": "Which OSI layer is responsible for end-to-end logical communication?",
+    "answers": [
+      { "text": "Application Layer", "correct": false },
+      { "text": "Network Layer", "correct": false },
+      { "text": "Transport Layer", "correct": true },
+      { "text": "Physical Layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which topology is used in Ethernet networks historically?",
+    "answers": [
+      { "text": "Ring", "correct": false },
+      { "text": "Star", "correct": false },
+      { "text": "Bus", "correct": true },
+      { "text": "Mesh", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does routing happen?",
+    "answers": [
+      { "text": "Session Layer", "correct": false },
+      { "text": "Transport Layer", "correct": false },
+      { "text": "Network Layer", "correct": true },
+      { "text": "Application Layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which topology provides a dedicated connection between each pair of devices?",
+    "answers": [
+      { "text": "Ring", "correct": false },
+      { "text": "Star", "correct": false },
+      { "text": "Mesh", "correct": true },
+      { "text": "Bus", "correct": false }
+    ]
+  },
+  {
+    "question": "Which OSI layer is responsible for converting data into signals?",
+    "answers": [
+      { "text": "Physical Layer", "correct": true },
+      { "text": "Data Link Layer", "correct": false },
+      { "text": "Network Layer", "correct": false },
+      { "text": "Presentation Layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which topology is most scalable when adding new nodes?",
+    "answers": [
+      { "text": "Bus", "correct": false },
+      { "text": "Star", "correct": true },
+      { "text": "Ring", "correct": false },
+      { "text": "Mesh", "correct": false }
+    ]
+  },
+  {
+    "question": "Which OSI layer is responsible for dialog control (who speaks when)?",
+    "answers": [
+      { "text": "Presentation Layer", "correct": false },
+      { "text": "Session Layer", "correct": true },
+      { "text": "Application Layer", "correct": false },
+      { "text": "Transport Layer", "correct": false }
+    ]
+  },
+  {
+    "question": "In a hybrid topology, what is combined?",
+    "answers": [
+      { "text": "Only star and bus", "correct": false },
+      { "text": "Two or more topologies", "correct": true },
+      { "text": "Only star and ring", "correct": false },
+      { "text": "Only bus and mesh", "correct": false }
+    ]
+  },
+  {
+    "question": "Which OSI layer segments large messages into smaller packets?",
+    "answers": [
+      { "text": "Transport Layer", "correct": true },
+      { "text": "Network Layer", "correct": false },
+      { "text": "Data Link Layer", "correct": false },
+      { "text": "Application Layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which topology requires the maximum cabling and cost?",
+    "answers": [
+      { "text": "Star", "correct": false },
+      { "text": "Bus", "correct": false },
+      { "text": "Ring", "correct": false },
+      { "text": "Mesh", "correct": true }
+    ]
+  },
+  {
+    "question": "Which OSI layer is responsible for MAC addressing?",
+    "answers": [
+      { "text": "Network Layer", "correct": false },
+      { "text": "Data Link Layer", "correct": true },
+      { "text": "Transport Layer", "correct": false },
+      { "text": "Session Layer", "correct": false }
+    ]
+  },
+  {
+    "question": "In star topology, if one node fails, what happens?",
+    "answers": [
+      { "text": "Entire network fails", "correct": false },
+      { "text": "Only that node disconnects", "correct": true },
+      { "text": "Central hub fails too", "correct": false },
+      { "text": "Other nodes slow down", "correct": false }
+    ]
+  },
+  {
+    "question": "Which OSI layer ensures data is presented in readable format like JPEG, ASCII?",
+    "answers": [
+      { "text": "Session Layer", "correct": false },
+      { "text": "Presentation Layer", "correct": true },
+      { "text": "Application Layer", "correct": false },
+      { "text": "Network Layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which topology has a token passing mechanism to avoid collisions?",
+    "answers": [
+      { "text": "Ring", "correct": true },
+      { "text": "Bus", "correct": false },
+      { "text": "Star", "correct": false },
+      { "text": "Mesh", "correct": false }
+    ]
+  }
 ];
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
