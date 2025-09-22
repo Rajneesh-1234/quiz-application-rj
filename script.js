@@ -1,4 +1,31 @@
 const questions = [
+    {
+    "question": "Predict the output of the given pseudocode\n\ninteger a = 0, b = 1, c, i\nfor i = 1 to 5 do\n   c = a + b\n   a = b\n   b = c\n   print c\nend for",
+    "answers": [
+      { "text": "1 2 3 5 8", "correct": true },
+      { "text": "0 1 1 2 3", "correct": false },
+      { "text": "1 1 2 3 5", "correct": false },
+      { "text": "1 2 4 6 10", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger n = 5, fact = 1\nfor i = n down to 1 do\n   fact = fact * i\nend for\nprint fact",
+    "answers": [
+      { "text": "120", "correct": true },
+      { "text": "24", "correct": false },
+      { "text": "5", "correct": false },
+      { "text": "600", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger n = 6\nif(n % 2 == 0 AND n % 3 == 0) then print 'Divisible by 2 and 3'\nelse print 'Not divisible'",
+    "answers": [
+      { "text": "Divisible by 2 and 3", "correct": true },
+      { "text": "Divisible by 2", "correct": false },
+      { "text": "Divisible by 3", "correct": false },
+      { "text": "Not divisible", "correct": false }
+    ]
+  },
   {
     "question": "Predict the output of the given pseudocode\n\ninteger a = 29, b = 15\nprint(a & b)\nprint(a | b)\nprint(a ^ b)",
     "answers": [
