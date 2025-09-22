@@ -1,290 +1,339 @@
 const questions = [
   {
-  "questions": [
-    {
-      "id": 1,
-      "category": "Pseudocode - Bitwise",
-      "question": "Predict the output of the given pseudocode\n\ninteger a = 29\ninteger b = 15\ninteger c = a & b\ninteger d = a | b\ninteger e = a ^ b\nprint c\nprint d\nprint e",
-      "options": ["13, 31, 18", "15, 29, 2", "14, 30, 17", "None of these"],
-      "answer": "13, 31, 18"
-    },
-    {
-      "id": 2,
-      "category": "Pseudocode - Bitwise",
-      "question": "Predict the output of the given pseudocode\n\ninteger x = 8\ninteger y = 2\nprint (x << y)\nprint (x >> y)",
-      "options": ["32, 2", "16, 4", "64, 2", "8, 2"],
-      "answer": "32, 2"
-    },
-    {
-      "id": 3,
-      "category": "Pseudocode - Condition",
-      "question": "Predict the output of the given pseudocode\n\ninteger a = 5, b = 10, c = 15\nif (a < b AND b < c) then\n   print a + b + c\nelse\n   print a * b * c\nend if",
-      "options": ["30", "750", "25", "15"],
-      "answer": "30"
-    },
-    {
-      "id": 4,
-      "category": "Pseudocode - Condition",
-      "question": "Predict the output of the given pseudocode\n\ninteger a = 10\nif (a % 2 == 0) then\n   if (a % 5 == 0) then\n      print 'Divisible'\n   else\n      print 'Not Divisible'\n   end if\nelse\n   print 'Odd'\nend if",
-      "options": ["Divisible", "Not Divisible", "Odd", "Error"],
-      "answer": "Divisible"
-    },
-    {
-      "id": 5,
-      "category": "Pseudocode - Loop",
-      "question": "Predict the output of the given pseudocode\n\ninteger i = 1, sum = 0\nwhile (i <= 5) do\n   sum = sum + i * i\n   i = i + 1\nend while\nprint sum",
-      "options": ["55", "30", "15", "25"],
-      "answer": "55"
-    },
-    {
-      "id": 6,
-      "category": "Pseudocode - Loop",
-      "question": "Predict the output of the given pseudocode\n\ninteger i = 1\nfor i = 1 to 5 do\n   print i * 2\nend for",
-      "options": ["2 4 6 8 10", "1 2 3 4 5", "10 20 30 40 50", "None"],
-      "answer": "2 4 6 8 10"
-    },
-    {
-      "id": 7,
-      "category": "Pseudocode - Pointer",
-      "question": "Predict the output of the given pseudocode\n\ninteger a = 5\npointer p = &a\n*p = *p + 10\nprint a",
-      "options": ["5", "10", "15", "20"],
-      "answer": "15"
-    },
-    {
-      "id": 8,
-      "category": "Pseudocode - Pointer",
-      "question": "Predict the output of the given pseudocode\n\ninteger a = 3, b = 4\npointer p = &a\npointer q = &b\nprint (*p) * (*q)",
-      "options": ["7", "12", "1", "0"],
-      "answer": "12"
-    },
-    {
-      "id": 9,
-      "category": "Pseudocode - Recursion",
-      "question": "Predict the output of the given pseudocode\n\nfunction fact(n):\n   if n == 0 then return 1\n   else return n * fact(n-1)\nend function\n\nprint fact(4)",
-      "options": ["24", "16", "12", "10"],
-      "answer": "24"
-    },
-    {
-      "id": 10,
-      "category": "Pseudocode - Recursion",
-      "question": "Predict the output of the given pseudocode\n\nfunction fib(n):\n   if n <= 1 then return n\n   else return fib(n-1) + fib(n-2)\nend function\n\nprint fib(5)",
-      "options": ["3", "5", "8", "7"],
-      "answer": "5"
-    },
-    {
-      "id": 11,
-      "category": "Pseudocode - Logic",
-      "question": "Predict the output of the given pseudocode\n\ninteger x = 7\ndo\n   print x\n   x = x - 2\nwhile(x > 0)",
-      "options": ["7 5 3 1", "7 6 5 4", "7 4 1", "7 2"],
-      "answer": "7 5 3 1"
-    },
-    {
-      "id": 12,
-      "category": "Pseudocode - Logic",
-      "question": "Predict the output of the given pseudocode\n\ninteger a = 2, b = 3, c = 4\nprint (a + b * c - a / b)",
-      "options": ["13", "14", "12", "15"],
-      "answer": "14"
-    },
-    {
-      "id": 13,
-      "category": "Pseudocode - OOP",
-      "question": "Predict the output of the given pseudocode\n\nclass Parent:\n   function show():\n      print 'Parent'\nclass Child extends Parent:\n   function show():\n      print 'Child'\n\nobject obj = new Child()\nobj.show()",
-      "options": ["Parent", "Child", "Error", "None"],
-      "answer": "Child"
-    },
-    {
-      "id": 14,
-      "category": "Pseudocode - OOP",
-      "question": "Predict the output of the given pseudocode\n\nclass A:\n   integer x = 10\nclass B extends A:\n   integer x = 20\nobject obj = new B()\nprint obj.x",
-      "options": ["10", "20", "30", "Error"],
-      "answer": "20"
-    },
-    {
-      "id": 15,
-      "category": "Pseudocode - Loop",
-      "question": "Predict the output of the given pseudocode\n\ninteger i, j\nfor i = 1 to 3 do\n   for j = 1 to 2 do\n      print i * j\n   end for\nend for",
-      "options": ["1 2 2 4 3 6", "1 2 3 4 5 6", "2 4 6", "Error"],
-      "answer": "1 2 2 4 3 6"
-    },
-    {
-      "id": 16,
-      "category": "Pseudocode - Bitwise",
-      "question": "Predict the output of the given pseudocode\n\ninteger a = 12\ninteger b = ~a\nprint b",
-      "options": ["-13", "-12", "13", "12"],
-      "answer": "-13"
-    },
-    {
-      "id": 17,
-      "category": "Pseudocode - Pointer",
-      "question": "Predict the output of the given pseudocode\n\ninteger arr[3] = {1,2,3}\npointer p = arr\nprint *(p+2)",
-      "options": ["1", "2", "3", "Error"],
-      "answer": "3"
-    },
-    {
-      "id": 18,
-      "category": "Pseudocode - Recursion",
-      "question": "Predict the output of the given pseudocode\n\nfunction fun(n):\n   if n <= 1 then return 1\n   return fun(n-1) + fun(n-2)\nend function\n\nprint fun(4)",
-      "options": ["3", "5", "2", "4"],
-      "answer": "3"
-    },
-    {
-      "id": 19,
-      "category": "Pseudocode - Condition",
-      "question": "Predict the output of the given pseudocode\n\ninteger a = -5\nif (a > 0) then\n   print 'Positive'\nelseif (a < 0) then\n   print 'Negative'\nelse\n   print 'Zero'\nend if",
-      "options": ["Positive", "Negative", "Zero", "Error"],
-      "answer": "Negative"
-    },
-    {
-      "id": 20,
-      "category": "Pseudocode - OOP",
-      "question": "Predict the output of the given pseudocode\n\nclass Demo:\n   static integer count = 0\n   constructor():\n      count = count + 1\n\nobject d1 = new Demo()\nobject d2 = new Demo()\nprint Demo.count",
-      "options": ["1", "2", "3", "0"],
-      "answer": "2"
-    },
-    {
-      "id": 21,
-      "category": "Pseudocode - Loop",
-      "question": "Predict the output of the given pseudocode\n\ninteger i = 0\nrepeat\n   print i\n   i = i + 2\nuntil(i >= 6)",
-      "options": ["0 2 4 6", "0 2 4", "2 4 6", "0 1 2 3 4 5"],
-      "answer": "0 2 4 6"
-    },
-    {
-      "id": 22,
-      "category": "Pseudocode - Bitwise",
-      "question": "Predict the output of the given pseudocode\n\ninteger x = 5\ny = x ^ x\nprint y",
-      "options": ["0", "5", "10", "Error"],
-      "answer": "0"
-    },
-    {
-      "id": 23,
-      "category": "Pseudocode - Logic",
-      "question": "Predict the output of the given pseudocode\n\ninteger i = 1, s = 0\nwhile(i < 4) do\n   s = s + i\n   i = i + 1\nend while\nprint s",
-      "options": ["6", "10", "3", "4"],
-      "answer": "6"
-    },
-    {
-      "id": 24,
-      "category": "Pseudocode - Condition",
-      "question": "Predict the output of the given pseudocode\n\ninteger a = 4\nif (a % 2 == 0 OR a % 3 == 0) then\n   print 'Valid'\nelse\n   print 'Invalid'\nend if",
-      "options": ["Valid", "Invalid", "Error", "None"],
-      "answer": "Valid"
-    },
-    {
-      "id": 25,
-      "category": "Pseudocode - Recursion",
-      "question": "Predict the output of the given pseudocode\n\nfunction mystery(n):\n   if n == 1 then return 1\n   return n * mystery(n-2)\nend function\n\nprint mystery(5)",
-      "options": ["15", "10", "5", "0"],
-      "answer": "15"
-    },
-    {
-      "id": 26,
-      "category": "DBMS",
-      "question": "Which normal form removes partial dependency?",
-      "options": ["1NF", "2NF", "3NF", "BCNF"],
-      "answer": "2NF"
-    },
-    {
-      "id": 27,
-      "category": "DBMS",
-      "question": "Which SQL command is used to remove duplicates from a query result?",
-      "options": ["UNIQUE", "DISTINCT", "DELETE", "DROP"],
-      "answer": "DISTINCT"
-    },
-    {
-      "id": 28,
-      "category": "DBMS",
-      "question": "In a relation, a super key is:",
-      "options": ["A set of attributes uniquely identifying a row", "Minimal set of keys", "Primary key only", "Foreign key only"],
-      "answer": "A set of attributes uniquely identifying a row"
-    },
-    {
-      "id": 29,
-      "category": "DBMS",
-      "question": "Which of the following is not a type of join?",
-      "options": ["Inner Join", "Outer Join", "Self Join", "Primary Join"],
-      "answer": "Primary Join"
-    },
-    {
-      "id": 30,
-      "category": "DBMS",
-      "question": "Which isolation level avoids dirty read?",
-      "options": ["Read Uncommitted", "Read Committed", "Repeatable Read", "Serializable"],
-      "answer": "Read Committed"
-    },
-    {
-      "id": 31,
-      "category": "Cloud Computing",
-      "question": "Which of these is not a cloud service model?",
-      "options": ["IaaS", "PaaS", "SaaS", "Naas"],
-      "answer": "Naas"
-    },
-    {
-      "id": 32,
-      "category": "Cloud Computing",
-      "question": "Which company introduced AWS?",
-      "options": ["Microsoft", "Amazon", "Google", "IBM"],
-      "answer": "Amazon"
-    },
-    {
-      "id": 33,
-      "category": "Cloud Computing",
-      "question": "Which cloud type provides both public and private access?",
-      "options": ["Private", "Hybrid", "Community", "Public"],
-      "answer": "Hybrid"
-    },
-    {
-      "id": 34,
-      "category": "Cloud Computing",
-      "question": "Which protocol is mostly used for secure file transfer in cloud?",
-      "options": ["HTTP", "HTTPS", "SFTP", "FTP"],
-      "answer": "SFTP"
-    },
-    {
-      "id": 35,
-      "category": "Cloud Computing",
-      "question": "Which cloud deployment provides services to a specific group/organization?",
-      "options": ["Public", "Private", "Community", "Hybrid"],
-      "answer": "Community"
-    },
-    {
-      "id": 36,
-      "category": "Computer Network",
-      "question": "Which layer of OSI model handles error detection?",
-      "options": ["Physical", "Data Link", "Network", "Transport"],
-      "answer": "Data Link"
-    },
-    {
-      "id": 37,
-      "category": "Computer Network",
-      "question": "Which protocol is connection-oriented?",
-      "options": ["UDP", "TCP", "IP", "ARP"],
-      "answer": "TCP"
-    },
-    {
-      "id": 38,
-      "category": "Computer Network",
-      "question": "What is the default port number for HTTPS?",
-      "options": ["21", "25", "80", "443"],
-      "answer": "443"
-    },
-    {
-      "id": 39,
-      "category": "Computer Network",
-      "question": "Which addressing is used by the Internet?",
-      "options": ["MAC", "IP", "Port", "ARP"],
-      "answer": "IP"
-    },
-    {
-      "id": 40,
-      "category": "Computer Network",
-      "question": "Which protocol translates domain names to IP addresses?",
-      "options": ["DHCP", "DNS", "SMTP", "SNMP"],
-      "answer": "DNS"
-    }
-  ]
-}
-
+    "question": "Predict the output of the given pseudocode\n\ninteger a = 29, b = 15\nprint(a & b)\nprint(a | b)\nprint(a ^ b)",
+    "answers": [
+      { "text": "13, 31, 18", "correct": true },
+      { "text": "15, 29, 2", "correct": false },
+      { "text": "14, 30, 17", "correct": false },
+      { "text": "None of these", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger x = 8, y = 2\nprint(x << y)\nprint(x >> y)",
+    "answers": [
+      { "text": "32, 2", "correct": true },
+      { "text": "16, 4", "correct": false },
+      { "text": "64, 2", "correct": false },
+      { "text": "8, 2", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger a = 5, b = 10, c = 15\nif (a < b AND b < c) then\n   print a + b + c\nelse\n   print a * b * c\nend if",
+    "answers": [
+      { "text": "30", "correct": true },
+      { "text": "750", "correct": false },
+      { "text": "25", "correct": false },
+      { "text": "15", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger a = 10\nif (a % 2 == 0) then\n   if (a % 5 == 0) then\n      print 'Divisible'\n   else\n      print 'Not Divisible'\n   end if\nelse\n   print 'Odd'\nend if",
+    "answers": [
+      { "text": "Divisible", "correct": true },
+      { "text": "Not Divisible", "correct": false },
+      { "text": "Odd", "correct": false },
+      { "text": "Error", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger i = 1, sum = 0\nwhile (i <= 5) do\n   sum = sum + i * i\n   i = i + 1\nend while\nprint sum",
+    "answers": [
+      { "text": "55", "correct": true },
+      { "text": "30", "correct": false },
+      { "text": "15", "correct": false },
+      { "text": "25", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger i = 1\nrepeat\n   print i\n   i = i + 2\nuntil(i > 5)",
+    "answers": [
+      { "text": "1 3 5", "correct": true },
+      { "text": "1 2 3 4 5", "correct": false },
+      { "text": "2 4", "correct": false },
+      { "text": "None", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\nfor i = 1 to 3 do\n   for j = 1 to 2 do\n      print i * j\n   end for\nend for",
+    "answers": [
+      { "text": "1 2 2 4 3 6", "correct": true },
+      { "text": "1 2 3 4", "correct": false },
+      { "text": "2 4 6", "correct": false },
+      { "text": "1 1 2 2 3 3", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger a = 7\nprint(~a)",
+    "answers": [
+      { "text": "-8", "correct": true },
+      { "text": "7", "correct": false },
+      { "text": "-7", "correct": false },
+      { "text": "8", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger a = 12, b = 7\nprint(a ^ b)",
+    "answers": [
+      { "text": "11", "correct": false },
+      { "text": "5", "correct": true },
+      { "text": "19", "correct": false },
+      { "text": "3", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\nfunction fact(n):\n   if n == 1 then return 1\n   else return n * fact(n-1)\nend function\nprint fact(4)",
+    "answers": [
+      { "text": "24", "correct": true },
+      { "text": "4", "correct": false },
+      { "text": "12", "correct": false },
+      { "text": "16", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\nfunction sum(n):\n   if n == 0 then return 0\n   else return n + sum(n-1)\nend function\nprint sum(3)",
+    "answers": [
+      { "text": "6", "correct": true },
+      { "text": "3", "correct": false },
+      { "text": "0", "correct": false },
+      { "text": "9", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\nfunction fib(n):\n   if n <= 1 then return n\n   else return fib(n-1) + fib(n-2)\nend function\nprint fib(5)",
+    "answers": [
+      { "text": "5", "correct": true },
+      { "text": "8", "correct": false },
+      { "text": "3", "correct": false },
+      { "text": "13", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger a = 5, b = 10\nif(a AND b) then print(1) else print(0)",
+    "answers": [
+      { "text": "1", "correct": true },
+      { "text": "0", "correct": false },
+      { "text": "5", "correct": false },
+      { "text": "10", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\nif(0) then print('A') else print('B')",
+    "answers": [
+      { "text": "A", "correct": false },
+      { "text": "B", "correct": true },
+      { "text": "Error", "correct": false },
+      { "text": "Nothing", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger a = 10\ninteger *p = &a\n*p = 20\nprint(a)",
+    "answers": [
+      { "text": "20", "correct": true },
+      { "text": "10", "correct": false },
+      { "text": "Address of a", "correct": false },
+      { "text": "Error", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\nclass A {\n   constructor A() { print('A') }\n}\nA obj",
+    "answers": [
+      { "text": "A", "correct": true },
+      { "text": "Nothing", "correct": false },
+      { "text": "Error", "correct": false },
+      { "text": "Garbage", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\nfor i = 0 to 2 do\n   print(i)\nend for",
+    "answers": [
+      { "text": "0 1 2", "correct": true },
+      { "text": "1 2 3", "correct": false },
+      { "text": "0 1 2 3", "correct": false },
+      { "text": "Error", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger i = 1\nwhile(i < 5) do\n   i = i * 2\nend while\nprint i",
+    "answers": [
+      { "text": "8", "correct": true },
+      { "text": "4", "correct": false },
+      { "text": "2", "correct": false },
+      { "text": "Error", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger sum = 0\nfor i = 1 to 4 do\n   if(i % 2 == 0) then sum = sum + i\nend for\nprint sum",
+    "answers": [
+      { "text": "6", "correct": true },
+      { "text": "4", "correct": false },
+      { "text": "10", "correct": false },
+      { "text": "8", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\nfunction f(n):\n   if(n <= 1) return 1\n   else return f(n-1) + f(n-2)\nend function\nprint f(4)",
+    "answers": [
+      { "text": "3", "correct": true },
+      { "text": "5", "correct": false },
+      { "text": "2", "correct": false },
+      { "text": "4", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger x = 3, y = 6\nif(x > 2 OR y < 5) then print 'true' else print 'false'",
+    "answers": [
+      { "text": "true", "correct": true },
+      { "text": "false", "correct": false },
+      { "text": "error", "correct": false },
+      { "text": "nothing", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger a = 5, b = 2\nprint(a / b)\nprint(a % b)",
+    "answers": [
+      { "text": "2, 1", "correct": true },
+      { "text": "2.5, 0", "correct": false },
+      { "text": "2, 0", "correct": false },
+      { "text": "5, 2", "correct": false }
+    ]
+  },
+  {
+    "question": "Predict the output of the given pseudocode\n\ninteger arr[3] = {1,2,3}\nfor i = 0 to 2 do\n   print(arr[i])\nend for",
+    "answers": [
+      { "text": "1 2 3", "correct": true },
+      { "text": "0 1 2", "correct": false },
+      { "text": "3 2 1", "correct": false },
+      { "text": "Error", "correct": false }
+    ]
+  },
+  {
+    "question": "DBMS: Which key uniquely identifies each record in a table?",
+    "answers": [
+      { "text": "Primary Key", "correct": true },
+      { "text": "Foreign Key", "correct": false },
+      { "text": "Candidate Key", "correct": false },
+      { "text": "Composite Key", "correct": false }
+    ]
+  },
+  {
+    "question": "DBMS: Which SQL command removes all rows but keeps the table structure?",
+    "answers": [
+      { "text": "TRUNCATE", "correct": true },
+      { "text": "DELETE", "correct": false },
+      { "text": "DROP", "correct": false },
+      { "text": "REMOVE", "correct": false }
+    ]
+  },
+  {
+    "question": "DBMS: Which SQL clause is used to filter records?",
+    "answers": [
+      { "text": "WHERE", "correct": true },
+      { "text": "HAVING", "correct": false },
+      { "text": "GROUP BY", "correct": false },
+      { "text": "ORDER BY", "correct": false }
+    ]
+  },
+  {
+    "question": "DBMS: Which command is used to permanently delete a table?",
+    "answers": [
+      { "text": "DROP", "correct": true },
+      { "text": "DELETE", "correct": false },
+      { "text": "REMOVE", "correct": false },
+      { "text": "TRUNCATE", "correct": false }
+    ]
+  },
+  {
+    "question": "Cloud Computing: Which service provides virtual machines over the internet?",
+    "answers": [
+      { "text": "IaaS", "correct": true },
+      { "text": "PaaS", "correct": false },
+      { "text": "SaaS", "correct": false },
+      { "text": "DBaaS", "correct": false }
+    ]
+  },
+  {
+    "question": "Cloud Computing: Which model allows developers to deploy apps without managing servers?",
+    "answers": [
+      { "text": "PaaS", "correct": true },
+      { "text": "IaaS", "correct": false },
+      { "text": "SaaS", "correct": false },
+      { "text": "FaaS", "correct": false }
+    ]
+  },
+  {
+    "question": "Cloud Computing: Which cloud model combines public and private clouds?",
+    "answers": [
+      { "text": "Hybrid Cloud", "correct": true },
+      { "text": "Private Cloud", "correct": false },
+      { "text": "Community Cloud", "correct": false },
+      { "text": "Public Cloud", "correct": false }
+    ]
+  },
+  {
+    "question": "Cloud Computing: Which company introduced AWS?",
+    "answers": [
+      { "text": "Amazon", "correct": true },
+      { "text": "Microsoft", "correct": false },
+      { "text": "Google", "correct": false },
+      { "text": "IBM", "correct": false }
+    ]
+  },
+  {
+    "question": "Cloud Computing: Which cloud type is shared by multiple organizations?",
+    "answers": [
+      { "text": "Community Cloud", "correct": true },
+      { "text": "Private Cloud", "correct": false },
+      { "text": "Public Cloud", "correct": false },
+      { "text": "Hybrid Cloud", "correct": false }
+    ]
+  },
+  {
+    "question": "Computer Network: Which OSI layer provides reliable transmission with acknowledgements?",
+    "answers": [
+      { "text": "Transport", "correct": true },
+      { "text": "Network", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Physical", "correct": false }
+    ]
+  },
+  {
+    "question": "Computer Network: Which topology has a central hub failure causing total network failure?",
+    "answers": [
+      { "text": "Star", "correct": true },
+      { "text": "Bus", "correct": false },
+      { "text": "Ring", "correct": false },
+      { "text": "Mesh", "correct": false }
+    ]
+  },
+  {
+    "question": "Computer Network: Which protocol translates domain names to IP addresses?",
+    "answers": [
+      { "text": "DNS", "correct": true },
+      { "text": "DHCP", "correct": false },
+      { "text": "SMTP", "correct": false },
+      { "text": "SNMP", "correct": false }
+    ]
+  },
+  {
+    "question": "Computer Network: Which OSI layer deals with encryption and compression?",
+    "answers": [
+      { "text": "Presentation", "correct": true },
+      { "text": "Session", "correct": false },
+      { "text": "Application", "correct": false },
+      { "text": "Transport", "correct": false }
+    ]
+  },
+  {
+    "question": "Computer Network: Which device works at the data link layer?",
+    "answers": [
+      { "text": "Switch", "correct": true },
+      { "text": "Router", "correct": false },
+      { "text": "Hub", "correct": false },
+      { "text": "Repeater", "correct": false }
+    ]
+  }
 ];
+
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
