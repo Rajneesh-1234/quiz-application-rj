@@ -101,8 +101,8 @@ const questions = [
   {
     "question": "Predict the output of the given pseudocode\n\ninteger a = 12, b = 7\nprint(a ^ b)",
     "answers": [
-      { "text": "11", "correct": false },
-      { "text": "5", "correct": true },
+      { "text": "11", "correct": true},
+      { "text": "5", "correct": false},
       { "text": "19", "correct": false },
       { "text": "3", "correct": false }
     ]
